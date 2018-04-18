@@ -1,7 +1,7 @@
 package edu.kotlinessentials.ch06
 
 fun main(args: Array<String>) {
-    println("Ex06-01")
+    println("Ex06-01 Functions")
 
     println(min1(1, 2))
     println(min2(1, 2))
