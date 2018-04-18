@@ -1,4 +1,4 @@
-package edu.kotlinessentila.ch05;
+package edu.kotlinessentials.ch05;
 
 public class JavaClass {
     private final String platformVariable;

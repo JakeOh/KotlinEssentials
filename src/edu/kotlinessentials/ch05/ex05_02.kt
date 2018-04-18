@@ -1,4 +1,4 @@
-package edu.kotlinessentila.ch05
+package edu.kotlinessentials.ch05
 
 fun main(args: Array<String>) {
     println("EX05-02 Smart Cast")

@@ -1,6 +1,4 @@
-package edu.kotlinessentila.ch05
-
-import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaValueParameter
+package edu.kotlinessentials.ch05
 
 fun main(args: Array<String>) {
     println("Ex05-03 Platform Type")
