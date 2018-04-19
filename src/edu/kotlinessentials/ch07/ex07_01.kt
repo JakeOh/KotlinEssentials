@@ -1,41 +1,35 @@
 package edu.kotlinessentials.ch07
 
 fun main(args: Array<String>) {
-    println("Ex07-01 Default Constructor")
+    println("Ex07-01 Primary Constructors")
 
     val a = A("Jake Oh", "02-1234-5678")
     println(a)
-    println(a.name)
-    println(a.telNo)
+    println("a{name:${a.name}, telNo:${a.telNo}}")
 
 //    val a2 = A() // compile error: No constructor without parameter
 
     val b = B("Alan", "010-1111-1111")
     println(b)
-    println(b.name)
-    println(b.telNo)
+    println("b{name:${b.name}, telNo:${b.telNo}}")
 
 //    val c = C("", "") // compile error: private constructor
     val c = C.newC("Maxim", "010-2222-2222")
     println(c)
-    println(c.name)
-    println(c.telNo)
+    println("c{name:${c.name}, telNo:${c.telNo}}")
 
     val d = D("Albert", "010-3333-3333")
     println(d)
-    println(d.name)     // not d._name
-    println(d.telNo)    // not d._telNo
+    println("d{name:${d.name}, telNo:${d.telNo}}")
+    // not d._name and not d._telNo
 
     val e = E("Schrodinger", "010-4444-4444")
     println(e)
-    println(e.name)
-    println(e.telNo)
+    println("e{name:${e.name}, telNo:${e.telNo}}")
 
     val f = F("Heidelberg", "010-5555-5555", 0)
     println(f)
-    println(f.name)
-    println(f.telNo)
-    println(f.type)
+    println("f{name:${f.name}, telNo:${f.telNo}, type: ${f.type}}")
 }
 
 // class Classname constructor(var member: Type, ...) { // body }
