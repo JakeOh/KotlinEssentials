@@ -32,6 +32,8 @@ fun main(args: Array<String>) {
     child.changeHairColor("Dark Brown")
     child.printHairColor()
 
+    val singer = ProfessionalSinger("Jazz")
+    singer.sing()
 }
 
 // By default, all classes in Kotlin are final:
@@ -88,5 +90,16 @@ class Child(hairColor: String, eyeColor: String): Father(hairColor, eyeColor) {
 
     fun printHairColor() {
         println("Child hair color is $hairColor.")
+    }
+}
+
+// Abstract Classes
+abstract class Singer(val songType: String) {
+    abstract fun sing()
+}
+
+class ProfessionalSinger(songType: String): Singer(songType) {
+    override fun sing() {
+        println("Professional singer sing a $songType")
     }
 }
