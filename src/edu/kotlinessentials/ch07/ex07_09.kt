@@ -11,6 +11,14 @@ fun main(args: Array<String>) {
     })
     submitButton.click()
 
+    val cancelButton = MyButton("Cancel")
+    cancelButton.listener = object : MyButton.OnClickListener {
+        override fun onClick() {
+            println("Cancelled!")
+        }
+    }
+    cancelButton.click()
+
 }
 
 class MyButton(val name: String) {
