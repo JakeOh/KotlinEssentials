@@ -1,7 +1,7 @@
 package edu.kotlinessentials.ch08
 
 fun main(args: Array<String>) {
-    println("Ex08-02 Lambda")
+    println("Ex08-02 Lambda return expressions")
 
     findHong(friends)
     findLee(friends)
