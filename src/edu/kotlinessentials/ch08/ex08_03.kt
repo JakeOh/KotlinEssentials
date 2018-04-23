@@ -18,7 +18,9 @@ fun main(args: Array<String>) {
     println(list1.filter { it % 2 ==  0})
     println(list1.map { it * 10 })
 
-    println(friends.filter { it.age in 10..19 }.map { it.name })
+    println(friends.filter { it.age in 10..19 })
+//    println(friends.filter { it.age in 10..19 }.map { it.name })
+    println(friends.filter { it.age in 10..19 }.map(Friend::name))
 
 }
 
