@@ -47,7 +47,10 @@ val sum8 = fun(x: Int, y: Int) = x + y
 val sum9: (Int, Int) -> Int = { x, y -> x + y }
 val sum10 = { x: Int, y: Int -> x + y }
 
-val sum11 = { x: Int, y: Int -> println("$x + $y = ${x+y}");x + y }
+val sum11 = { x: Int, y: Int ->
+    println("$x + $y = ${x+y}")
+    x + y   //implicit return
+    }
 
 // higher-order functions
 fun funcExec1(x: Int, y: Int, func: (Int, Int) -> Int): Int {
